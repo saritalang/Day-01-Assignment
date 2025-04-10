@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+   
+</head>
+<body>
+    <header>
+        <h1>Interactive Quiz</h1>
+    </header>
+
+    <form onsubmit="checkAnswers(event)">
+        <h2>Question 1: What is 2 + 2?</h2>
+        <label>
+            <input type="radio" name="q1" value="a"> 4
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="b"> 5
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="c"> 6
+        </label><br>
+
+        <h2>Question 2: What is the capital of France?</h2>
+        <label>
+            <input type="radio" name="q2" value="a"> Berlin
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="b"> Paris
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="c"> Rome
+        </label><br>
+
+        <h2>Question 3: Which is the largest planet in our Solar System?</h2>
+        <label>
+            <input type="radio" name="q3" value="a"> Earth
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="b"> Mars
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="c"> Jupiter
+        </label><br><br>
+
+        <button type="submit" onclick="checkAnswers()">Submit</button>
+    </form>
+    <div>
+        <h2>Thank You!</h2>
+    </div>
+</body>
+</html>

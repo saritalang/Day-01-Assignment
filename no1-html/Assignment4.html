@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+</head>
+<body>
+    <section>
+        <h1>Image Gallery</h1>
+        <div id="gallery">
+            <figure>
+                <img src="sun.jpeg" alt="" onclick="openLightbox('')" height="20%" width="20%">
+                <figcaption>The vibrant colors of sunset are a result of scattering of light by the Earth's atmosphere.</figcaption>
+            </figure>
+            <figure>
+                <img src="10 art.jpeg" alt="" onclick="openLightbox('')" height="20%" width="20%">
+                <figcaption>Autumn is a season of transition and change, the changing colors of leaves, and a cozy atmosphere.</figcaption>
+            </figure>
+            <figure>
+                <img src="10 best .jpeg" alt="" onclick="openLightbox('')" height="20%" width="20%">
+                <figcaption>Mountains are home to a wide range of plant and animal species.</figcaption>
+            </figure>
+           
+        </div>
+    </section>
+
+   
+    <div id="lightbox" style="display: none;">
+        <img id="lightbox-image" src="" alt="Expanded view">
+        <button onclick="closeLightbox()">Close</button>
+    </div>
+
+    
+</body>
+</html>
